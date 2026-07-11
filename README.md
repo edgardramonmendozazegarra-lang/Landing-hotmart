@@ -3,22 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manual de Fotografía: Click Perfecto</title>
+<title>Click Perfecto — Fotos nítidas de los momentos que importan</title>
+<meta name="description" content="La guía en PDF para dejar de perder tus mejores momentos —familia, viajes, día a día— por fotos borrosas o mal enfocadas. Sin tecnicismos, en un fin de semana.">
+<meta property="og:title" content="Click Perfecto — Fotos nítidas de los momentos que importan">
+<meta property="og:description" content="La guía en PDF para dejar de perder tus mejores momentos por fotos borrosas o mal enfocadas.">
+<meta property="og:type" content="website">
+<!-- <meta property="og:image" content="[URL DE UNA IMAGEN 1200x630 DE LA PORTADA]"> -->
+<!-- ============ META PIXEL (landing page) ============ -->
+<!-- Reemplaza TU_PIXEL_ID por el ID real de tu Pixel de Meta antes de publicar.
+     Esto rastrea PageView y ViewContent en ESTA página (antes del clic a Hotmart).
+     IMPORTANTE: como el checkout ocurre en el dominio de Hotmart, este Pixel
+     por sí solo NO puede capturar el evento "Purchase" (Hotmart no comparte esa
+     página contigo). Para medir la venta real necesitas TAMBIÉN vincular el
+     mismo Pixel ID dentro de Hotmart: Panel del Productor → Herramientas →
+     Pixels de Rastreo → Facebook Pixel, y ahí Hotmart dispara "Purchase"
+     automáticamente cuando alguien compra. Sin ese paso en Hotmart, tu Pixel
+     solo ve tráfico, nunca ventas. -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'TU_PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=TU_PIXEL_ID&ev=PageView&noscript=1"
+/></noscript>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#14120f;
-    --panel:#1d1a15;
-    --panel-2:#242019;
-    --paper:#f3eee3;
-    --ink:#211d17;
-    --amber:#e8a33d;
-    --amber-dark:#c97f1e;
-    --rust:#c1442e;
-    --grey:#948d80;
-    --grey-dim:#5c574c;
-    --line: rgba(243,238,227,0.14);
+    --bg:#150f2e;
+    --panel:#1d1642;
+    --panel-2:#241a52;
+    --paper:#fff8ef;
+    --ink:#1a1030;
+    --amber:#ff7a29;
+    --amber-dark:#f2590a;
+    --rust:#ff3d68;
+    --grey:#ad9fe6;
+    --grey-dim:#786aab;
+    --line: rgba(255,248,239,0.16);
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -94,10 +124,10 @@
     padding:20px 38px;
     border-radius:4px;
     text-decoration:none;
-    box-shadow:0 12px 32px -8px rgba(232,163,61,0.45);
+    box-shadow:0 12px 32px -8px rgba(255,122,41,0.5);
     transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
   }
-  .btn-big:hover{transform:translateY(-2px);background:var(--amber-dark);box-shadow:0 16px 36px -6px rgba(232,163,61,0.55);}
+  .btn-big:hover{transform:translateY(-2px);background:var(--amber-dark);box-shadow:0 16px 36px -6px rgba(255,122,41,0.6);}
   .btn-big:focus-visible{outline:3px solid var(--paper);outline-offset:3px;}
   .btn-big .arrow{transition:transform .18s ease;}
   .btn-big:hover .arrow{transform:translateX(4px);}
@@ -108,8 +138,8 @@
     padding:96px 0 110px;
     overflow:hidden;
     background:
-      radial-gradient(circle at 18% 20%, rgba(232,163,61,0.16), transparent 42%),
-      radial-gradient(circle at 82% 70%, rgba(193,68,46,0.14), transparent 45%),
+      radial-gradient(circle at 18% 20%, rgba(255,122,41,0.28), transparent 42%),
+      radial-gradient(circle at 82% 70%, rgba(255,61,104,0.24), transparent 45%),
       var(--bg);
   }
   .bokeh{position:absolute;inset:0;pointer-events:none;z-index:0;}
@@ -144,6 +174,15 @@
     box-shadow:0 40px 70px -20px rgba(0,0,0,0.7), 0 0 0 1px rgba(0,0,0,0.4);
     transform:rotate(2.2deg);
   }
+  .cover-photo{
+    width:100%;height:150px;border-radius:4px;margin-bottom:16px;
+    background:rgba(255,248,239,0.06);
+    border:1px dashed var(--line);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+    text-align:center;padding:10px;
+  }
+  .cover-photo svg{stroke:var(--amber);opacity:0.6;}
+  .cover-photo span{font-size:0.68rem;color:var(--grey);line-height:1.3;}
   .cover-eyebrow{font-size:0.62rem;letter-spacing:0.2em;color:var(--grey);text-transform:uppercase;}
   .cover h3{font-size:1.55rem;color:var(--paper);margin-top:14px;line-height:1.15;}
   .cover h3 em{color:var(--amber);font-style:italic;display:block;font-size:1.7rem;margin-top:4px;}
@@ -226,6 +265,9 @@
   }
   .proof-card p{color:var(--grey);font-style:italic;font-size:0.92rem;margin:0;}
   .proof-card .who{margin-top:16px;font-size:0.78rem;color:var(--grey-dim);font-family:'IBM Plex Mono',monospace;}
+  .photo-slot{align-items:center;text-align:center;justify-content:center;min-height:220px;}
+  .photo-slot svg{stroke:var(--amber);opacity:0.6;}
+  .photo-slot p{font-style:normal;}
 
   /* ---------- pricing ---------- */
   .pricing{
@@ -252,13 +294,13 @@
   }
   .price-big{
     font-family:'Fraunces',serif;font-weight:900;
-    font-size:5rem;color:var(--paper);line-height:1;margin:10px 0 4px;
+    font-size:clamp(3.2rem, 12vw, 5rem);color:var(--paper);line-height:1;margin:10px 0 4px;
   }
   .price-big sup{font-size:2rem;top:-2.4rem;}
   .price-old{color:var(--grey);text-decoration:line-through;font-family:'IBM Plex Mono',monospace;font-size:1rem;}
   .urgency{
     margin-top:20px;display:inline-flex;align-items:center;gap:10px;
-    background:rgba(193,68,46,0.14);border:1px solid rgba(193,68,46,0.4);
+    background:rgba(255,61,104,0.16);border:1px solid rgba(255,61,104,0.45);
     color:#f0a793;padding:9px 16px;border-radius:4px;font-size:0.85rem;
   }
   .urgency .dot{width:7px;height:7px;border-radius:50%;background:var(--rust);animation:pulse 1.4s infinite;}
@@ -277,7 +319,7 @@
   .final{
     text-align:center;padding:110px 0 100px;
     background:
-      radial-gradient(circle at 50% 0%, rgba(232,163,61,0.14), transparent 55%),
+      radial-gradient(circle at 50% 0%, rgba(255,122,41,0.22), transparent 55%),
       var(--bg);
   }
   .final h2{font-size:clamp(2rem,3.6vw,2.9rem);max-width:22ch;margin:0 auto 18px;}
@@ -303,7 +345,7 @@
 <div class="topbar">
   <div class="topbar-inner">
     <div class="topbar-title">Manual de Fotografía: <b>Click Perfecto</b></div>
-    <a class="btn-small" href="https://pay.hotmart.com/B106673888R" target="_blank" rel="noopener">Comprar · $9</a>
+    <a class="btn-small" href="https://pay.hotmart.com/B106673888R" target="_blank" rel="noopener">Comprar · $9.90</a>
   </div>
 </div>
 
@@ -318,22 +360,27 @@
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow">Manual de fotografía · Edición digital</span>
-      <h1>Deja el modo automático.<br>Domina el <em>Click Perfecto.</em></h1>
-      <p class="lead">Sin manuales técnicos aburridos ni teoría de ingeniería óptica. Solo los ajustes exactos que necesitas tocar para que tus fotos dejen de verse "amateur" y empiecen a dejar a todos con la boca abierta — desde tu primer disparo en manual.</p>
+      <h1>Deja de perder los momentos que importan.<br>Captura el <em>Click Perfecto.</em></h1>
+      <p class="lead">Sin manuales técnicos aburridos ni teoría de ingeniería óptica. Solo los ajustes exactos que necesitas tocar para que esa risa de tus hijos, ese viaje o ese atardecer no se te escapen en una foto movida o mal enfocada — con la cámara o el celular que ya tienes.</p>
       <a class="btn-big" href="https://pay.hotmart.com/B106673888R" target="_blank" rel="noopener">
-        Quiero mi manual por $9 <span class="arrow">→</span>
+        Quiero mi manual por $9.90 <span class="arrow">→</span>
       </a>
       <div class="btn-note">Descarga inmediata en PDF · Acceso de por vida · Pago 100% seguro vía Hotmart</div>
     </div>
     <div class="cover-stage">
       <div class="cover frame"><span></span>
+        <!-- Reemplaza .cover-photo por: <img src="TU-PORTADA.jpg" alt="Portada del manual Click Perfecto"> dentro de .cover-photo -->
+        <div class="cover-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.2" width="30" height="30"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-4 4-2-2-5 5"/></svg>
+          <span>Foto 3 de 3 — imagen para la portada del ebook</span>
+        </div>
         <div class="cover-eyebrow">Manual práctico</div>
         <h3>Click<em>Perfecto</em></h3>
         <svg class="aperture" viewBox="0 0 100 100" aria-hidden="true">
-          <g fill="none" stroke="#e8a33d" stroke-width="2" opacity="0.9">
+          <g fill="none" stroke="#ff7a29" stroke-width="2" opacity="0.9">
             <polygon points="50,8 82,28 82,72 50,92 18,72 18,28" opacity="0.35"/>
             <polygon points="50,20 72,33 72,67 50,80 28,67 28,33" opacity="0.7"/>
-            <circle cx="50" cy="50" r="12" fill="#e8a33d" opacity="0.9" stroke="none"/>
+            <circle cx="50" cy="50" r="12" fill="#ff7a29" opacity="0.9" stroke="none"/>
           </g>
         </svg>
         <div class="cover-foot mono">f/9 · ISO 400 · 1/125s</div>
@@ -346,20 +393,20 @@
 <section class="pain section">
   <div class="wrap">
     <span class="kicker">La frustración de hoy</span>
-    <h2>Tienes una cámara capaz de mucho más de lo que le estás pidiendo.</h2>
+    <h2>¿Cuántas veces se te escapó la foto perfecta?</h2>
     <p class="sub">Si algo de esto te suena familiar, no es que te falte "ojo" — es que nadie te ha explicado los tres ajustes que realmente importan, en un lenguaje que se entiende.</p>
     <div class="pain-grid">
       <div class="pain-item">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 17l6-6 4 4 8-8"/><circle cx="12" cy="12" r="10" stroke-dasharray="2 3"/></svg>
-        <p><b>Fotos que salen borrosas o "planas"</b>Aunque enfocaste bien, la imagen no transmite nada. Le falta profundidad, luz, intención.</p>
+        <p><b>La foto salió movida o mal enfocada</b>Esa risa de tu hijo, ese atardecer de viaje, ese momento único — ya no vuelve, y la foto no le hace justicia.</p>
       </div>
       <div class="pain-item">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
-        <p><b>Tu celular te "gana" a la cámara</b>Sientes que pagaste por un equipo profesional que apenas sabes usar en modo automático.</p>
+        <p><b>Cámara buena, fotos mediocres</b>Sientes que invertiste en un equipo mejor y aun así sigues usando el modo automático sin saber por qué.</p>
       </div>
       <div class="pain-item">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 015 .5c0 1.7-2.5 2-2.5 4"/><line x1="12" y1="17" x2="12" y2="17.2"/></svg>
-        <p><b>Miedo a tocar el modo manual</b>ISO, apertura, velocidad... suena a examen de física. Prefieres no arriesgarte a "arruinar" la toma.</p>
+        <p><b>Sigues dependiendo de alguien más</b>Pagar un fotógrafo cada vez que quieres buenas fotos —de tus hijos, tu viaje o un evento— cuando podrías tomarlas tú mismo/a.</p>
       </div>
       <div class="pain-item">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M2 12h4M18 12h4M12 2v4M12 18v4"/><circle cx="12" cy="12" r="5"/></svg>
@@ -374,11 +421,11 @@
   <div class="wrap solution-grid">
     <div>
       <span class="kicker">La solución simplificada</span>
-      <h2>Un manual, no un curso. Se lee en una tarde, se aplica de por vida.</h2>
-      <p class="sub" style="margin-bottom:34px;">Click Perfecto está escrito para alguien que quiere resultados ya, no una carrera de fotografía. Cada capítulo te deja con un ajuste concreto para probar con tu propia cámara, hoy mismo.</p>
+      <h2>Un manual, no un curso. Se lee en una tarde, se aplica desde hoy.</h2>
+      <p class="sub" style="margin-bottom:34px;">Click Perfecto está escrito para alguien ocupado/a que quiere resultados ya, no una carrera de fotografía. Cada capítulo te deja con un ajuste concreto para probar con tu propia cámara o celular, hoy mismo.</p>
       <ul class="feat-list">
         <li><span class="feat-num">1</span><div><b>El triángulo de exposición sin fórmulas</b><span>ISO, apertura y velocidad explicados con ejemplos, no con física.</span></div></li>
-        <li><span class="feat-num">2</span><div><b>Errores invisibles que arruinan tus fotos</b><span>Y la corrección exacta para cada uno, en menos de 2 minutos.</span></div></li>
+        <li><span class="feat-num">2</span><div><b>Los errores invisibles que arruinan tus fotos</b><span>Y la corrección exacta para cada uno, en menos de 2 minutos — sea un cumpleaños, un viaje o el momento que sea.</span></div></li>
         <li><span class="feat-num">3</span><div><b>Compatible con cualquier equipo</b><span>DSLR, mirrorless o el celular que ya tienes en el bolsillo.</span></div></li>
       </ul>
     </div>
@@ -399,27 +446,33 @@
     <h2>Click Perfecto se adapta a lo que buscas capturar.</h2>
     <div class="angles-grid">
       <div class="angle-card">
-        <span class="tag">Control técnico</span>
-        <p>Deja de adivinar las configuraciones de tu cámara. Toma el control total del modo manual, domina la nitidez perfecta y logra un aspecto profesional desde el primer disparo.</p>
+        <span class="tag">Familia y momentos del día a día</span>
+        <p>Deja de adivinar las configuraciones de tu cámara. Toma el control total del modo manual y logra fotos nítidas de tus hijos o de tu día a día desde el primer disparo, sin depender de un fotógrafo.</p>
       </div>
       <div class="angle-card">
-        <span class="tag">Momentos e historias</span>
-        <p>No dejes que los momentos importantes salgan borrosos o sin vida. Aprende a componer imágenes que transmiten emociones reales y a dominar la luz natural, de forma fácil.</p>
+        <span class="tag">Viajes, retratos y fotografía general</span>
+        <p>No dejes que los momentos importantes salgan borrosos o sin vida. Aprende a componer imágenes que transmiten la emoción real de ese instante, con luz natural y sin equipo caro.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ PRUEBA SOCIAL ============ -->
+<!-- ============ EJEMPLOS DE RESULTADO ============ -->
 <section class="proof section">
   <div class="wrap">
-    <span class="kicker">Prueba social</span>
-    <h2>Lo que dicen quienes ya lo están aplicando.</h2>
-    <p class="sub">Espacio reservado para tus propias capturas de pantalla o testimonios reales (Instagram, WhatsApp, reseñas). Reemplaza estas tarjetas con ejemplos verídicos antes de publicar — la prueba social funciona mejor cuando es 100% auténtica.</p>
-    <div class="proof-grid">
-      <div class="proof-card"><p>"[Espacio para una captura real: antes / después de un alumno]"</p><div class="who">— agrega nombre y usuario real</div></div>
-      <div class="proof-card"><p>"[Espacio para un testimonio real sobre un resultado logrado con el manual]"</p><div class="who">— agrega nombre y usuario real</div></div>
-      <div class="proof-card"><p>"[Espacio para una reseña real de Hotmart o redes sociales]"</p><div class="who">— agrega nombre y usuario real</div></div>
+    <span class="kicker">El resultado que puedes lograr</span>
+    <h2>Así se ven las fotos cuando aplicas lo que enseña el manual.</h2>
+    <p class="sub">Espacio para 2 fotos propias que muestren el objetivo (nitidez, composición, luz). Reemplaza los recuadros de abajo por tus propias fotos antes de publicar — funciona mejor con ejemplos reales, tuyos o de tu familia.</p>
+    <div class="proof-grid" style="grid-template-columns:repeat(2,1fr);max-width:720px;">
+      <!-- Reemplaza el div .photo-slot por: <img src="TU-FOTO-1.jpg" alt="Ejemplo de foto nítida lograda con el manual"> -->
+      <div class="proof-card photo-slot">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" width="34" height="34"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-4 4-2-2-5 5"/></svg>
+        <p style="margin-top:12px;">[Foto ejemplo 1 — resultado "nítido y con luz", ideal una foto real de un niño o momento cotidiano]</p>
+      </div>
+      <div class="proof-card photo-slot">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" width="34" height="34"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-4 4-2-2-5 5"/></svg>
+        <p style="margin-top:12px;">[Foto ejemplo 2 — resultado con buena composición, ideal un paisaje o retrato bien logrado]</p>
+      </div>
     </div>
   </div>
 </section>
@@ -427,37 +480,39 @@
 <!-- ============ PRICING ============ -->
 <section class="pricing section">
   <div class="wrap">
-    <span class="kicker">Tu ajuste perfecto</span>
+    <span class="kicker">Tu kit digital</span>
     <h2>Todo lo que necesitas para dejar de disparar a ciegas.</h2>
     <div class="price-grid">
       <div class="value-stack">
-        <div class="value-row"><span>Manual completo "Click Perfecto" (46 págs.)</span><span class="v">$37</span></div>
-        <div class="value-row"><span>Acceso de por vida</span><span class="v">$12</span></div>
-        <div class="value-total"><span class="k">Valor total</span><span class="v">$49</span></div>
+        <div class="value-row"><span>Manual "Click Perfecto" (46 págs.)</span><span class="v">$19.90</span></div>
+        <div class="value-row"><span>Bonus: Guía de Emergencia (1 hoja, ajustes en 5 seg.)</span><span class="v">$5.90</span></div>
+        <div class="value-row"><span>Bonus: Fotos de portada sin salir de casa</span><span class="v">$5.90</span></div>
+        <div class="value-row"><span>Bonus: Comunidad privada de feedback</span><span class="v">Incluido</span></div>
+        <div class="value-total"><span class="k">Valor total</span><span class="v">$31.70</span></div>
       </div>
       <div class="price-panel">
         <div class="dial-wrap">
           <svg width="88" height="88" viewBox="0 0 100 100" aria-hidden="true">
             <circle cx="50" cy="50" r="46" fill="none" stroke="#3a352b" stroke-width="1.5"/>
-            <g fill="none" stroke="#e8a33d" stroke-width="2">
+            <g fill="none" stroke="#ff7a29" stroke-width="2">
               <polygon points="50,8 82,28 82,72 50,92 18,72 18,28" opacity="0.3"/>
               <polygon points="50,20 72,33 72,67 50,80 28,67 28,33" opacity="0.75"/>
             </g>
-            <circle cx="50" cy="50" r="10" fill="#e8a33d"/>
+            <circle cx="50" cy="50" r="10" fill="#ff7a29"/>
           </svg>
         </div>
         <div class="price-tag">Precio de lanzamiento</div>
-        <div class="price-big">$9</div>
-        <div class="price-old">Precio regular $27</div>
+        <div class="price-big">$9.90</div>
+        <div class="price-old">Valor total $31.70</div>
 
         <div class="urgency">
           <span class="dot"></span>
-          Sube a $27 en <span class="timer" id="countdown">15:00</span>
+          Precio de lanzamiento
         </div>
 
         <div style="margin-top:30px;">
           <a class="btn-big" href="https://pay.hotmart.com/B106673888R" target="_blank" rel="noopener">
-            Llevarme el manual · $9 <span class="arrow">→</span>
+            Llevarme el kit · $9.90 <span class="arrow">→</span>
           </a>
         </div>
 
@@ -475,7 +530,7 @@
   <div class="wrap">
     <span class="kicker" style="justify-content:center;display:flex;">Última llamada</span>
     <h2>Tu cámara ya sabe hacer fotos increíbles. Falta que tú lo sepas también.</h2>
-    <p>Click Perfecto por $9, acceso inmediato, para siempre.</p>
+    <p>Click Perfecto por $9.90, acceso inmediato, para siempre.</p>
     <a class="btn-big" href="https://pay.hotmart.com/B106673888R" target="_blank" rel="noopener">
       Quiero mi Click Perfecto <span class="arrow">→</span>
     </a>
@@ -486,21 +541,6 @@
 <footer>
   Manual de Fotografía: Click Perfecto — Producto digital de entrega inmediata.
 </footer>
-
-<script>
-  (function(){
-    var totalSeconds = 15 * 60; // countdown only in-memory, resets on reload
-    var el = document.getElementById('countdown');
-    function tick(){
-      if(totalSeconds <= 0){ el.textContent = "00:00"; return; }
-      totalSeconds--;
-      var m = Math.floor(totalSeconds/60);
-      var s = totalSeconds%60;
-      el.textContent = (m<10?'0':'')+m+':'+(s<10?'0':'')+s;
-    }
-    setInterval(tick, 1000);
-  })();
-</script>
 
 </body>
 </html>
